@@ -1,1 +1,10 @@
-This is my homework
+Scenario: Registration page
+Given the user is on registration page
+And the user enters a first name
+And the user enters a last name
+And the user enters an valid email address
+And the user enters a valid password
+And the user re-enters the same password
+When the user clicks Register button
+Then the user should be registered successfully
+And the user should see “Your registration completed” message
